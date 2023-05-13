@@ -5,7 +5,7 @@ const GigSchema = new Schema(
     {
         userId: {
             type: String,
-            required: true,
+            required: false,
         },
         title: {
             type: String,
@@ -39,10 +39,6 @@ const GigSchema = new Schema(
             type: [String],
             required: false,
         },
-        userId: {
-            type: String,
-            required: true,
-        },
         shortTitle: {
             type: String,
             required: true,
@@ -66,7 +62,7 @@ const GigSchema = new Schema(
         sales: {
             type: Number,
             default: 0,
-        },
+        }
     },
     {
         timestamps: true,
