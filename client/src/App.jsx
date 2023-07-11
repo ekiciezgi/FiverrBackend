@@ -1,5 +1,10 @@
 import "./app.scss";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
+import {
+  QueryClient,
+  QueryClientProvider,
+  useQuery,
+} from '@tanstack/react-query'
 import React from "react";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
@@ -13,16 +18,25 @@ import Orders from "./src/pages/orders/Orders";
 import Messages from "./src/pages/messages/Messages";
 import Message from "./src/pages/message/Message";
 import MyGigs from "./src/pages/myGigs/MyGigs";
+import Pay from "./src/pages/pay/Pay";
+import Success from "./src/pages/success/Success";
 import "./app.scss"
-import GigCard from "./components/gigCard/GigCard";
 function App() {
+
+  const queryClient = new QueryClient()
+
   const Layout = () => {
     return (
       <div className="app">
-        <Navbar />
-        <Outlet />
-        <Footer />
+        <QueryClientProvider client={queryClient}>
+
+          <Navbar />
+          <Outlet />
+          <Footer />
+
+        </QueryClientProvider>
       </div>
+
     );
   };
 
@@ -31,7 +45,6 @@ function App() {
       path: "/",
       element: <Layout />,
       children: [
-
         {
           path: "/",
           element: <Home />,
@@ -65,16 +78,23 @@ function App() {
           element: <Gig />,
         },
         {
+          path: "/register",
+          element: <Register />,
+        },
+        {
           path: "/login",
           element: <Login />,
         },
+        {
+          path: "/pay/:id",
+          element: <Pay />,
+        },
+        {
+          path: "/success",
+          element: <Success />,
+        },
       ],
     },
-    {
-      path: "/register",
-      element: <Register />,
-    },
-
   ]);
 
   return <RouterProvider router={router} />;

@@ -26,12 +26,14 @@
 
       tr {
         height: 50px;
+
         th {
           text-align: left;
         }
+
         td {
-          
-          sup{
+
+          sup {
             font-size: 12px;
           }
 
@@ -46,6 +48,7 @@
             cursor: pointer;
           }
         }
+
         &:nth-child(even) {
           background-color: #1dbf730f;
         }
