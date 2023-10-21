@@ -1,4 +1,4 @@
-# FiverrProject
+# FiverrProject React vite Nodejs Mongo db Strapi
 ![Ekran görüntüsü 2023-10-21 143047](https://github.com/ekiciezgi/FiverrProject/assets/78070798/ffab6b50-d7e0-41ed-a0e8-f972ec5690b0)
 ![Ekran görüntüsü 2023-10-21 143029](https://github.com/ekiciezgi/FiverrProject/assets/78070798/433d9de1-9991-4907-86c1-254ad9966ddc)
 ![Ekran görüntüsü 2023-10-21 143107](https://github.com/ekiciezgi/FiverrProject/assets/78070798/e8dea875-4306-4f23-99b8-83e044c63199)
@@ -13,4 +13,8 @@
 ![Ekran görüntüsü 2023-10-21 143339](https://github.com/ekiciezgi/FiverrProject/assets/78070798/01e3ed6e-6518-431f-b4d5-990fd9953362)
 ![Ekran görüntüsü 2023-10-21 143356](https://github.com/ekiciezgi/FiverrProject/assets/78070798/fb13e985-fd8e-4b56-bcf6-d8605186eef6)
 ![Ekran görüntüsü 2023-10-21 143414](https://github.com/ekiciezgi/FiverrProject/assets/78070798/0e928ddb-02ac-43de-9bb4-39f2b2bf3249)
+I used mongodb 
+![Ekran görüntüsü 2023-10-21 143733](https://github.com/ekiciezgi/FiverrProject/assets/78070798/e5f5f343-7a86-4c38-8b41-82bcfabdd243)
+I used Strapi for payment transactions.
+![Ekran görüntüsü 2023-10-21 143859](https://github.com/ekiciezgi/FiverrProject/assets/78070798/37456fa5-c4aa-4b2e-b239-b8f42974c2a8)
 
